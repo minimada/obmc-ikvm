@@ -32,8 +32,8 @@ void Manager::run()
 
         if (video.needsResize())
         {
-            videoDone = false;
             waitServer();
+            videoDone = false;
             video.resize();
             server.resize();
             setVideoDone();
